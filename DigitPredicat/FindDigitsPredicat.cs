@@ -86,14 +86,14 @@ namespace DigitPredicat
             {
                 if (arraySourceNumber.Length == arrayDigitFilter.Length)
                 {
-                    return (inputSourceNumber ^ inputPredicateDigit) != 0;
+                    return (inputSourceNumber ^ inputPredicateDigit) == 0;
                 }
                 else
                 {
                     int countIteration = 0, countHelper = 0; 
                     var numberHelper = 0.0;
 
-                    while (countIteration + arrayDigitFilter.Length < arraySourceNumber.Length)
+                    while (countIteration + arrayDigitFilter.Length <= arraySourceNumber.Length)
                     {
                         for (int j = countIteration; j < arrayDigitFilter.Length + countIteration; j++)
                         {
