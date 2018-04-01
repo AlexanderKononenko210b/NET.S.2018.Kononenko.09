@@ -10,11 +10,11 @@ namespace DigitPredicat.Test
         [Test]
         public void FindDigitsPredicat_With_Valid_Data()
         {
-            var arrayForTest = new int[5];
+            var arrayForTest = new int[100000];
             Random random = new Random(0);
             for (int itemArray = 0; itemArray < arrayForTest.Length; itemArray++)
             {
-                arrayForTest[itemArray] = random.Next(0, 100);
+                arrayForTest[itemArray] = random.Next(0, 100000);
             }
 
             var outputArray = FindDigitsPredicat.FilterDigit(arrayForTest, 222);
