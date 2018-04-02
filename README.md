@@ -2,7 +2,7 @@
 
 Expand the functionality of the filter method (# 6) in such a way 
 that it is possible to filter the incoming integer array according 
-to any predicate function. Delegates do not use!
+to any predicate function. Delegates do not use! [смотреть здесь](https://github.com/AlexanderKononenko210b/NET.S.2018.Kononenko.01.git)
 
 Develop a class that provides the following functionality:
 The function of byte-by-pixel copying the contents of one file into another using the FileStream class as a stream with a backup storage; the function must return the number of bytes written;
