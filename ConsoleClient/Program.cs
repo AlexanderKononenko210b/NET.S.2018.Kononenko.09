@@ -9,9 +9,9 @@ namespace ConsoleClient
     {
         static void Main(string[] args)
         {
-            var source = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "SourceText.txt");
+            string source = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ConfigurationManager.AppSettings["fileSource"]);
 
-            var destination = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "OutputText.txt");
+            string destination = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, ConfigurationManager.AppSettings["fileOutput"]);
 
             Console.WriteLine($"ByteCopy() done. Total bytes: {ByByteCopy(source, destination)}");//ok
 
